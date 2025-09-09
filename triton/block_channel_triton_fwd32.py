@@ -1,16 +1,3 @@
-# !usr/bin/env python3
-# -*- coding:utf-8 -*-
-
-#############################################
-# Copyright (C) Zhejiang Lab(ZJLab) 2025. All Right Reserved.
-# FilePath: \undefinedc:\Users\hp\Desktop\triton_fwd32.py
-# Release version: 1.0
-# Date: 2025-09-01
-# Author: FanJH
-# LastEditTime: 2025-09-01
-# LastEditors: FanJH
-# Description: 
-#############################################
 import torch
 import triton
 import triton.language as tl
@@ -283,3 +270,4 @@ if __name__ == "__main__":
     print(f"ref_c: {ref_c}")
     print(f"diff: {diff}")
     assert diff < 1e-3
+
