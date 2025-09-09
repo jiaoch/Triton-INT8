@@ -1,16 +1,3 @@
-# !usr/bin/env python3
-# -*- coding:utf-8 -*-
-
-#############################################
-# Copyright (C) Zhejiang Lab(ZJLab) 2025. All Right Reserved.
-# FilePath: \undefinedc:\Users\hp\Desktop\block_channel_tilelang_bwd.py
-# Release version: 1.0
-# Date: 2025-09-01
-# Author: FanJH
-# LastEditTime: 2025-09-01
-# LastEditors: FanJH
-# Description: 
-#############################################
 from typing import Tuple
 
 import triton
@@ -242,6 +229,7 @@ if __name__ == "__main__":
         for out_dtype in ["bfloat16"]:
             for block_N in [128]:  
                 assert_tl_gemm_correctness(10, 1024, 1024, 8192, block_N, dtype, out_dtype, "int32")
+
 
 
 
